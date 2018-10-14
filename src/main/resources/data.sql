@@ -1,2 +1,10 @@
 insert into Aluno values (59320492,'carlos eduardo');
 insert into Aluno values (11113,'breno');
+insert into Aluno values (11114,'adriel');
+insert into Aluno values (11111,'rodrigo');
+insert into Aluno values (11112,'cavanha');
+insert into Aluno values (11115,'eloah');
+insert into Aluno values (11116,'keilane');
+insert into Aluno values (11117,'jordana');
+insert into Aluno values (11118,'roberto');
+insert into Aluno values (11119,'andre');
