@@ -33,11 +33,6 @@ public class Atividade {
 		super();
 	}
 	
-	public Atividade(String string, int i, int percentualCargaHoraria2, int maximoAtividadesSemestre2,
-			int percentualPorAtividade2) {
-		// TODO Auto-generated constructor stub
-	}
-
 	public Integer getValorLimiteHorasAtividade(Integer totalHorasComplementares) {
 		return totalHorasComplementares * percentualPorAtividade / 100;
 	}
@@ -47,57 +42,15 @@ public class Atividade {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	public Integer getCodigo() {
-		return codigo;
-	}
-
-	public void setCodigo(Integer codigo) {
-		this.codigo = codigo;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public Integer getPercentualCargaHoraria() {
-		return percentualCargaHoraria;
-	}
-
-	public void setPercentualCargaHoraria(Integer percentualCargaHoraria) {
-		this.percentualCargaHoraria = percentualCargaHoraria;
-	}
-
-	public Integer getMaximoAtividadesSemestre() {
-		return maximoAtividadesSemestre;
-	}
-
-	public void setMaximoAtividadesSemestre(Integer maximoAtividadesSemestre) {
-		this.maximoAtividadesSemestre = maximoAtividadesSemestre;
-	}
-
-	public Integer getPercentualPorAtividade() {
-		return percentualPorAtividade;
-	}
-
-	public void setPercentualPorAtividade(Integer percentualPorAtividade) {
-		this.percentualPorAtividade = percentualPorAtividade;
-	}	
+	public Integer getCodigo() {return codigo;}
+	public void setCodigo(Integer codigo) {this.codigo = codigo;}
+	public String getNome() {return nome;}
+	public void setNome(String nome) {this.nome = nome;}
+	public Integer getPercentualCargaHoraria() {return percentualCargaHoraria;}
+	public void setPercentualCargaHoraria(Integer percentualCargaHoraria) {this.percentualCargaHoraria = percentualCargaHoraria;}
+	public Integer getMaximoAtividadesSemestre() {return maximoAtividadesSemestre;}
+	public void setMaximoAtividadesSemestre(Integer maximoAtividadesSemestre) {this.maximoAtividadesSemestre = maximoAtividadesSemestre;}
+	public Integer getPercentualPorAtividade() {return percentualPorAtividade;}
+	public void setPercentualPorAtividade(Integer percentualPorAtividade) {this.percentualPorAtividade = percentualPorAtividade;}
 
 }
