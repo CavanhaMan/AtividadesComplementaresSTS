@@ -48,7 +48,7 @@ public class LancamentoAtividade implements Serializable {
 		else
 			return ano+"-1";
 	}
-	
+	/*
 	public Integer getHorasAproveitadas(Atividade atividade,Integer quantidadeHorasCurso,Integer quantidadeHorasfeitas,Date dataFim) {
 		if(atividade.getNome().equals("estagio")) {
 			if(quantidadeHorasfeitas>atividade.getHorasAproveitadasPorAtividade(quantidadeHorasCurso)) 						
@@ -60,7 +60,7 @@ public class LancamentoAtividade implements Serializable {
 		return 1;
 				
 	}
-
+*/
 	public LancamentoAtividade() {super();}
 	public Integer getCodigo() {return codigo;}
 	public void setCodigo(Integer codigo) {this.codigo = codigo;}
