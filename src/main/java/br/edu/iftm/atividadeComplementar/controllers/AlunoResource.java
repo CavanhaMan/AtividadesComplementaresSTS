@@ -40,12 +40,10 @@ public class AlunoResource {
 	@GetMapping(value="{ra}")
 	public ResponseEntity<?> findByRa(@PathVariable Long ra) {
 		Optional<Aluno> aluno = service.buscarRa(ra);
-		if (aluno.isPresent()) {
+		if (aluno.isPresent())
 			return ResponseEntity.ok().body(aluno);	
-		} else {
+		else
 			return ResponseEntity.notFound().build();
-		}
-		
 	}
 	
 	@GetMapping
@@ -66,9 +64,8 @@ public class AlunoResource {
 	public ResponseEntity<?> atualizar(@Valid @RequestBody Aluno aluno) {
 		Optional<Aluno> alunoOptional = service.buscarRa(aluno.getRa());
 
-	    if (!alunoOptional.isPresent()) {
+	    if (!alunoOptional.isPresent())
 	      return ResponseEntity.notFound().build();
-	    }
 	    
 	 	service.salvarAtualizar(aluno);
 	    return ResponseEntity.noContent().build();
@@ -79,7 +76,8 @@ public class AlunoResource {
 		try {
 			service.excluir(ra);
 			return ResponseEntity.ok(ra);	
-		} catch(EmptyResultDataAccessException e) {
+		} 
+		catch(EmptyResultDataAccessException e) {
 			return ResponseEntity.notFound().build();
 		}
 		
