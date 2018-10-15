@@ -9,8 +9,7 @@ import org.junit.Test;
 import br.edu.iftm.atividadeComplementar.domains.LancamentoAtividade;
 
 public class LancamentoAtividadeTest {
-	
-	
+		
 	private LancamentoAtividade lancamentoAtividade;
 	
 	@Before

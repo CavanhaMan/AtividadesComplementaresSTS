@@ -1,7 +1,7 @@
 package br.edu.iftm.atividadeComplementar.domains;
 
 import java.util.List;
-
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -10,7 +10,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-public class Aluno {
+public class Aluno implements Serializable {
+	private static final long serialVersionUID = 1L;
+
 	
 	@Id
 	@NotNull(message="Campo ra precisa ser preenchido")
@@ -29,33 +31,12 @@ public class Aluno {
 		this.nome = nome;
 	}
 
-	public Aluno() {
-		super();
-	}
-
-	public Long getRa() {
-		return ra;
-	}
-
-	public void setRa(Long ra) {
-		this.ra = ra;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public List<LancamentoAtividade> getAtividades() {
-		return atividades;
-	}
-
-	public void setAtividades(List<LancamentoAtividade> atividades) {
-		this.atividades = atividades;
-	}
-	
+	public Aluno() {super();}
+	public Long getRa() {return ra;}
+	public void setRa(Long ra) {this.ra = ra;}
+	public String getNome() {return nome;}
+	public void setNome(String nome) {this.nome = nome;}
+	public List<LancamentoAtividade> getAtividades() {return atividades;}
+	public void setAtividades(List<LancamentoAtividade> atividades) {this.atividades = atividades;}	
 
 }

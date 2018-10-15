@@ -13,11 +13,8 @@ public class Atividade {
 	private Integer codigo;
 	
 	private String nome;
-	
 	private Integer percentualCargaHoraria;
-	
 	private Integer maximoAtividadesSemestre;
-	
 	private Integer percentualPorAtividade;
 
 	public Atividade(Integer codigo, String nome, Integer percentualCargaHoraria, Integer maximoAtividadesSemestre,	Integer percentualPorAtividade) {

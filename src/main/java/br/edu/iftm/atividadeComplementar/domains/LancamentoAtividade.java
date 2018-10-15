@@ -1,5 +1,6 @@
 package br.edu.iftm.atividadeComplementar.domains;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -10,7 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class LancamentoAtividade {
+public class LancamentoAtividade implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

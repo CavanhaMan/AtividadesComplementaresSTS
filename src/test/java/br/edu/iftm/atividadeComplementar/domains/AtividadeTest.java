@@ -2,9 +2,7 @@ package br.edu.iftm.atividadeComplementar.domains;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import br.edu.iftm.atividadeComplementar.domains.Atividade;
-
 import org.junit.Assert;
 
 public class AtividadeTest {
