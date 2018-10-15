@@ -20,8 +20,7 @@ public class Atividade {
 	
 	private Integer percentualPorAtividade;
 
-	public Atividade(Integer codigo, String nome, Integer percentualCargaHoraria, Integer maximoAtividadesSemestre,
-			Integer percentualPorAtividade) {
+	public Atividade(Integer codigo, String nome, Integer percentualCargaHoraria, Integer maximoAtividadesSemestre,	Integer percentualPorAtividade) {
 		super();
 		this.codigo = codigo;
 		this.nome = nome;
@@ -34,6 +33,11 @@ public class Atividade {
 		super();
 	}
 	
+	public Atividade(String string, int i, int percentualCargaHoraria2, int maximoAtividadesSemestre2,
+			int percentualPorAtividade2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public Integer getValorLimiteHorasAtividade(Integer totalHorasComplementares) {
 		return totalHorasComplementares * percentualPorAtividade / 100;
 	}

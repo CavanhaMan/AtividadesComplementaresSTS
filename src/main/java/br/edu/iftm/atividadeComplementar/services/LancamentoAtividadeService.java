@@ -2,10 +2,8 @@ package br.edu.iftm.atividadeComplementar.services;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import br.edu.iftm.atividadeComplementar.domains.LancamentoAtividade;
 import br.edu.iftm.atividadeComplementar.repositories.LancamentoAtividadeRepository;
 

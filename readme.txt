@@ -15,3 +15,12 @@ git commit -m "Nova versão atualizada via clone"
 git push --force
 
 ----------------------------------------------------------------------
+Implementar os CRUS e casos de teste para Atividade e LançamentoAtividade.
+
+Adicionei as funcionalidades e testes para a classe Aluno.
+Os mapeamentos também estão feitos.
+
+Caros, atualizei o repositório AtividadesComplementaresSTS https://github.com/carloseduardoxp/AtividadesComplementaresSTS 
+com o endpoint REST da classe Aluno, e os casos de teste para o endpoint e o repositório Aluno. 
+Vocês agora devem implementar os endpoints Atividade e LAncamentoAtividade, 
+e os casos de teste para esses endpoints e os repositórios.
