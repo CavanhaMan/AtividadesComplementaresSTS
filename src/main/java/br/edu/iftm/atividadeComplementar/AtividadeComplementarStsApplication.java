@@ -3,18 +3,19 @@ package br.edu.iftm.atividadeComplementar;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import br.edu.iftm.atividadeComplementar.repositories.AlunoRepository;
-import br.edu.iftm.atividadeComplementar.repositories.AtividadeRepository;
+
 import br.edu.iftm.atividadeComplementar.domains.Aluno;
 import br.edu.iftm.atividadeComplementar.domains.Atividade;
+import br.edu.iftm.atividadeComplementar.repositories.AlunoRepository;
+import br.edu.iftm.atividadeComplementar.repositories.AtividadeRepository;
 
 
 @SpringBootApplication
-public class AtividadeComplementarStsApplication implements CommandLineRunner {
+public class AtividadeComplementarStsApplication {
 
 	@Autowired
 	AlunoRepository alunoRepository;
@@ -25,7 +26,6 @@ public class AtividadeComplementarStsApplication implements CommandLineRunner {
 		SpringApplication.run(AtividadeComplementarStsApplication.class, args);
 	}
 
-	@Override
 	public void run(String... args) throws Exception {
 		Aluno al1 = new Aluno((long) 11120, "Seu Creison");
 		Aluno al2 = new Aluno((long) 11121, "Mr Beam");
